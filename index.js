@@ -11,6 +11,9 @@ app.use(express.json({ extended: false }));
 // Defino rutas
 app.use('/', require('./routes/index'));
 app.use('/api/url', require('./routes/url'));
+app.get('/api/sex', (req, res) => {
+  res.send('sex')
+});
 
 const PORT = 5000;
 
